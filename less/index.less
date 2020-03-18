@@ -50,6 +50,7 @@ header {
 		a {
 			color: @myBlack;
 			text-decoration: none;
+			text-align: center;
 			outline: none;
 			padding: 2% 4%;
 
@@ -64,6 +65,20 @@ header {
 	.container {
 		background: @mediumGrey;
 		padding: 5%;
+
+		@media (min-width: 800px){
+			display: flex;
+			justify-content: space-evenly;
+
+			img {
+				width: 50%;
+			}
+
+			.name-block {
+				width: 50%;
+				padding: 3%;
+			}
+		}
 
 		img {
 			max-width: 250px;
@@ -110,19 +125,32 @@ header {
 
 #about-me {
 	display: flex;
+	flex-direction: column;
+	
+	@media (min-width: 800px) {
+		flex-direction: row;
+	}
 
 	h2 {
 		margin-bottom: 2%; 
 	}
 
 	.bio {
-		width: 50%;
+		width: 100%;
 		padding: 3%;
+
+		@media (min-width: 800px) {
+			width: 50%;
+		}
 	}
 
 	.skills {
-		width: 50%;
+		width: 100%;
 		padding: 3%;
+
+		@media (min-width: 800px) {
+			width: 50%;
+		}
 
 		ul {
 			font-size: 1.6rem;

@@ -38,6 +38,7 @@ header nav {
 header nav a {
   color: #262626;
   text-decoration: none;
+  text-align: center;
   outline: none;
   padding: 2% 4%;
 }
@@ -48,6 +49,19 @@ header nav a:hover {
 header .container {
   background: #969696;
   padding: 5%;
+}
+@media (min-width: 800px) {
+  header .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header .container img {
+    width: 50%;
+  }
+  header .container .name-block {
+    width: 50%;
+    padding: 3%;
+  }
 }
 header .container img {
   max-width: 250px;
@@ -84,17 +98,33 @@ header .container button:active {
 }
 #about-me {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  #about-me {
+    flex-direction: row;
+  }
 }
 #about-me h2 {
   margin-bottom: 2%;
 }
 #about-me .bio {
-  width: 50%;
+  width: 100%;
   padding: 3%;
 }
+@media (min-width: 800px) {
+  #about-me .bio {
+    width: 50%;
+  }
+}
 #about-me .skills {
-  width: 50%;
+  width: 100%;
   padding: 3%;
+}
+@media (min-width: 800px) {
+  #about-me .skills {
+    width: 50%;
+  }
 }
 #about-me .skills ul {
   font-size: 1.6rem;
