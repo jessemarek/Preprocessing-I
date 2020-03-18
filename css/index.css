@@ -1,1 +1,82 @@
-/* Compile your LESS file! */
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', Sans serif;
+  font-size: 1.6rem;
+  color: #262626;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans', Sans serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  color: #262626;
+  text-decoration: none;
+  outline: none;
+  padding: 2% 4%;
+}
+header nav a:hover {
+  background: #262626;
+  color: #fff;
+}
+header .container {
+  background: #969696;
+  padding: 5%;
+}
+header .container img {
+  max-width: 250px;
+}
+header .container h1 {
+  font-size: 4rem;
+}
+header .container h3 {
+  font-size: 2.4rem;
+}
+header .container hr {
+  border: 1px solid #404040;
+  margin: 3% auto;
+}
+header .container p {
+  margin: 2%;
+}
+header .container button {
+  background: #404040;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 1% 2%;
+  margin: 2%;
+}
+header .container button:hover {
+  cursor: pointer;
+}
+header .container button:active {
+  outline: none;
+}
