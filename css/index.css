@@ -42,7 +42,7 @@ header nav a {
   padding: 2% 4%;
 }
 header nav a:hover {
-  background: #262626;
+  background: #404040;
   color: #fff;
 }
 header .container {
@@ -54,11 +54,13 @@ header .container img {
 }
 header .container h1 {
   font-size: 4rem;
+  margin: 2% 0;
 }
 header .container h3 {
   font-size: 2.4rem;
 }
 header .container hr {
+  width: 100%;
   border: 1px solid #404040;
   margin: 3% auto;
 }
@@ -79,4 +81,59 @@ header .container button:hover {
 }
 header .container button:active {
   outline: none;
+}
+#about-me {
+  display: flex;
+}
+#about-me h2 {
+  margin-bottom: 2%;
+}
+#about-me .bio {
+  width: 50%;
+  padding: 3%;
+}
+#about-me .skills {
+  width: 50%;
+  padding: 3%;
+}
+#about-me .skills ul {
+  font-size: 1.6rem;
+  list-style: none;
+}
+#about-me .skills ul li {
+  border: 1px dotted #dfdfdf;
+  padding: 3%;
+}
+.work-history {
+  width: 100%;
+  padding: 2%;
+}
+.work-history h2 {
+  margin-bottom: 2%;
+}
+.work-history table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #dfdfdf;
+}
+.work-history table th {
+  padding: 2%;
+}
+.work-history table tr {
+  padding: 2%;
+}
+.work-history table tr:nth-child(even) {
+  background: #dfdfdf;
+}
+.work-history table td {
+  padding: 2%;
+}
+footer {
+  width: 100%;
+  background: #404040;
+  color: #fff;
+  text-align: center;
+  margin-top: 4%;
+  padding: 2% 0 5%;
 }
