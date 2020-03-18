@@ -12,6 +12,16 @@ html,
 body {
   height: 100%;
 }
+/************************ Variables *************************/
+/************************ Mixins *************************/
+.tablePadding {
+  padding: 2%;
+}
+.navHover {
+  background: #404040;
+  color: #fff;
+}
+/************************ Styles *************************/
 body {
   font-family: 'Open Sans', Sans serif;
   font-size: 1.6rem;
@@ -31,57 +41,57 @@ h6 {
   margin: 0 auto;
   width: 85%;
 }
-header nav {
+.wrapper header nav {
   display: flex;
   justify-content: flex-end;
 }
-header nav a {
+.wrapper header nav a {
   color: #262626;
   text-decoration: none;
   text-align: center;
   outline: none;
   padding: 2% 4%;
 }
-header nav a:hover {
+.wrapper header nav a:hover {
   background: #404040;
   color: #fff;
 }
-header .container {
+.wrapper header .container {
   background: #969696;
   padding: 5%;
 }
 @media (min-width: 800px) {
-  header .container {
+  .wrapper header .container {
     display: flex;
     justify-content: space-evenly;
   }
-  header .container img {
+  .wrapper header .container img {
     width: 50%;
   }
-  header .container .name-block {
+  .wrapper header .container .name-block {
     width: 50%;
     padding: 3%;
   }
 }
-header .container img {
+.wrapper header .container img {
   max-width: 250px;
 }
-header .container h1 {
+.wrapper header .container h1 {
   font-size: 4rem;
   margin: 2% 0;
 }
-header .container h3 {
+.wrapper header .container h3 {
   font-size: 2.4rem;
 }
-header .container hr {
+.wrapper header .container hr {
   width: 100%;
   border: 1px solid #404040;
   margin: 3% auto;
 }
-header .container p {
+.wrapper header .container p {
   margin: 2%;
 }
-header .container button {
+.wrapper header .container button {
   background: #404040;
   color: #fff;
   font-size: 2rem;
@@ -90,76 +100,76 @@ header .container button {
   padding: 1% 2%;
   margin: 2%;
 }
-header .container button:hover {
+.wrapper header .container button:hover {
   cursor: pointer;
 }
-header .container button:active {
+.wrapper header .container button:active {
   outline: none;
 }
-#about-me {
+.wrapper #about-me {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 800px) {
-  #about-me {
+  .wrapper #about-me {
     flex-direction: row;
   }
 }
-#about-me h2 {
+.wrapper #about-me h2 {
   margin-bottom: 2%;
 }
-#about-me .bio {
+.wrapper #about-me .bio {
   width: 100%;
   padding: 3%;
 }
 @media (min-width: 800px) {
-  #about-me .bio {
+  .wrapper #about-me .bio {
     width: 50%;
   }
 }
-#about-me .skills {
+.wrapper #about-me .skills {
   width: 100%;
   padding: 3%;
 }
 @media (min-width: 800px) {
-  #about-me .skills {
+  .wrapper #about-me .skills {
     width: 50%;
   }
 }
-#about-me .skills ul {
+.wrapper #about-me .skills ul {
   font-size: 1.6rem;
   list-style: none;
 }
-#about-me .skills ul li {
+.wrapper #about-me .skills ul li {
   border: 1px dotted #dfdfdf;
   padding: 3%;
 }
-.work-history {
+.wrapper .work-history {
   width: 100%;
   padding: 2%;
 }
-.work-history h2 {
+.wrapper .work-history h2 {
   margin-bottom: 2%;
 }
-.work-history table {
+.wrapper .work-history table {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
   border: 1px solid #dfdfdf;
 }
-.work-history table th {
+.wrapper .work-history table th {
   padding: 2%;
 }
-.work-history table tr {
+.wrapper .work-history table tr {
   padding: 2%;
 }
-.work-history table tr:nth-child(even) {
+.wrapper .work-history table tr:nth-child(even) {
   background: #dfdfdf;
 }
-.work-history table td {
+.wrapper .work-history table td {
   padding: 2%;
 }
-footer {
+.wrapper footer {
   width: 100%;
   background: #404040;
   color: #fff;

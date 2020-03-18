@@ -16,6 +16,8 @@ html, body {
 	height: 100%;
 }
 
+/************************ Variables *************************/
+
 @lightGrey: #dfdfdf;
 @mediumGrey: #969696;
 @darkGrey: #404040;
@@ -24,6 +26,18 @@ html, body {
 @headingFont: 'Noto Sans', Sans serif;
 @bodyFont: 'Open Sans', Sans serif;
 
+/************************ Mixins *************************/
+.tablePadding {
+	padding: 2%;
+}
+
+.navHover {
+	background: @darkGrey;
+	color: #fff;
+}
+
+
+/************************ Styles *************************/
 body {
 
 	font-family: @bodyFont;
@@ -39,169 +53,169 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: column;
 	margin: 0 auto;
 	width: 85%;
-}
 
-header {
 
-	nav {
-		display: flex;
-		justify-content: flex-end;
+	header {
 
-		a {
-			color: @myBlack;
-			text-decoration: none;
-			text-align: center;
-			outline: none;
-			padding: 2% 4%;
+		nav {
+			display: flex;
+			justify-content: flex-end;
 
-			&:hover {
-				background: @darkGrey;
-				color: #fff;
+			a {
+				color: @myBlack;
+				text-decoration: none;
+				text-align: center;
+				outline: none;
+				padding: 2% 4%;
+
+				&:hover {
+					.navHover();
+				}
 			}
+
 		}
 
-	}
+		.container {
+			background: @mediumGrey;
+			padding: 5%;
 
-	.container {
-		background: @mediumGrey;
-		padding: 5%;
+			@media (min-width: 800px){
+				display: flex;
+				justify-content: space-evenly;
 
-		@media (min-width: 800px){
-			display: flex;
-			justify-content: space-evenly;
+				img {
+					width: 50%;
+				}
+
+				.name-block {
+					width: 50%;
+					padding: 3%;
+				}
+			}
 
 			img {
-				width: 50%;
+				max-width: 250px;
 			}
 
-			.name-block {
-				width: 50%;
-				padding: 3%;
+			h1 {
+				font-size: 4rem;
+				margin: 2% 0;
+			}
+		
+			h3 {
+				font-size: 2.4rem;
+			}
+
+			hr {
+				width: 100%;
+				border: 1px solid @darkGrey;
+				margin: 3% auto;
+			}
+
+			p {
+				margin: 2%;
+			}
+
+			button {
+				background: @darkGrey;
+				color: #fff;
+				font-size: 2rem;
+				border: none;
+				border-radius: 0.7rem;
+				padding: 1% 2%;
+				margin: 2%;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:active {
+					outline: none;
+				}
 			}
 		}
+	}
 
-		img {
-			max-width: 250px;
+	#about-me {
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width: 800px) {
+			flex-direction: row;
 		}
 
-		h1 {
-			font-size: 4rem;
-			margin: 2% 0;
-		}
-	
-		h3 {
-			font-size: 2.4rem;
+		h2 {
+			margin-bottom: 2%; 
 		}
 
-		hr {
+		.bio {
 			width: 100%;
-			border: 1px solid @darkGrey;
-			margin: 3% auto;
-		}
+			padding: 3%;
 
-		p {
-			margin: 2%;
-		}
-
-		button {
-			background: @darkGrey;
-			color: #fff;
-			font-size: 2rem;
-			border: none;
-			border-radius: 0.7rem;
-			padding: 1% 2%;
-			margin: 2%;
-
-			&:hover {
-				cursor: pointer;
-			}
-
-			&:active {
-				outline: none;
+			@media (min-width: 800px) {
+				width: 50%;
 			}
 		}
-	}
-}
 
-#about-me {
-	display: flex;
-	flex-direction: column;
-	
-	@media (min-width: 800px) {
-		flex-direction: row;
+		.skills {
+			width: 100%;
+			padding: 3%;
+
+			@media (min-width: 800px) {
+				width: 50%;
+			}
+
+			ul {
+				font-size: 1.6rem;
+				list-style: none;
+
+				li {
+					border: 1px dotted @lightGrey;
+					padding:3%;
+				}
+			}
+		}
 	}
 
-	h2 {
-		margin-bottom: 2%; 
-	}
-
-	.bio {
+	.work-history {
 		width: 100%;
-		padding: 3%;
+		padding: 2%;
 
-		@media (min-width: 800px) {
-			width: 50%;
-		}
-	}
-
-	.skills {
-		width: 100%;
-		padding: 3%;
-
-		@media (min-width: 800px) {
-			width: 50%;
+		h2 {
+			margin-bottom: 2%; 
 		}
 
-		ul {
-			font-size: 1.6rem;
-			list-style: none;
+		table {
+			width: 100%;
+			text-align: left;
+			border-collapse: collapse;
+			border: 1px solid @lightGrey;
 
-			li {
-				border: 1px dotted @lightGrey;
-				padding:3%;
+			th {
+				.tablePadding();
 			}
-		}
-	}
-}
 
-.work-history {
-	width: 100%;
-	padding: 2%;
+			tr{
+				.tablePadding();
 
-	h2 {
-		margin-bottom: 2%; 
-	}
-
-	table {
-		width: 100%;
-		text-align: left;
-		border-collapse: collapse;
-		border: 1px solid @lightGrey;
-
-		th {
-			padding: 2%;
-		}
-
-		tr{
-			padding: 2%;
-
-			&:nth-child(even) {
-			background: @lightGrey;
+				&:nth-child(even) {
+				background: @lightGrey;
+				}
 			}
-		}
 
-		td {
-			padding: 2%;
-		}
+			td {
+				.tablePadding();
+			}
 
+		}
 	}
-}
 
-footer {
-	width: 100%;
-	background: @darkGrey;
-	color: #fff;
-	text-align: center;
-	margin-top: 4%;
-	padding: 2% 0 5%;
+	footer {
+		width: 100%;
+		background: @darkGrey;
+		color: #fff;
+		text-align: center;
+		margin-top: 4%;
+		padding: 2% 0 5%;
+	}
 }
