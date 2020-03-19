@@ -14,13 +14,6 @@ body {
 }
 /************************ Variables *************************/
 /************************ Mixins *************************/
-.tablePadding {
-  padding: 2%;
-}
-.navHover {
-  background: #404040;
-  color: #fff;
-}
 /************************ Styles *************************/
 body {
   font-family: 'Open Sans', Sans serif;
