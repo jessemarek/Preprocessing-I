@@ -1,1 +1,172 @@
-/* Compile your LESS file! */
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+/************************ Variables *************************/
+/************************ Mixins *************************/
+/************************ Styles *************************/
+body {
+  font-family: 'Open Sans', Sans serif;
+  font-size: 1.6rem;
+  color: #262626;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans', Sans serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
+}
+.wrapper header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper header nav a {
+  color: #262626;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  padding: 2% 4%;
+}
+.wrapper header nav a:hover {
+  background: #404040;
+  color: #fff;
+}
+.wrapper header .container {
+  background: #969696;
+  padding: 5%;
+}
+@media (min-width: 800px) {
+  .wrapper header .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .wrapper header .container img {
+    width: 50%;
+  }
+  .wrapper header .container .name-block {
+    width: 50%;
+    padding: 3%;
+  }
+}
+.wrapper header .container img {
+  max-width: 250px;
+}
+.wrapper header .container h1 {
+  font-size: 4rem;
+  margin: 2% 0;
+}
+.wrapper header .container h3 {
+  font-size: 2.4rem;
+}
+.wrapper header .container hr {
+  width: 100%;
+  border: 1px solid #404040;
+  margin: 3% auto;
+}
+.wrapper header .container p {
+  margin: 2%;
+}
+.wrapper header .container button {
+  background: #404040;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 1% 2%;
+  margin: 2%;
+}
+.wrapper header .container button:hover {
+  cursor: pointer;
+}
+.wrapper header .container button:active {
+  outline: none;
+}
+.wrapper #about-me {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .wrapper #about-me {
+    flex-direction: row;
+  }
+}
+.wrapper #about-me h2 {
+  margin-bottom: 2%;
+}
+.wrapper #about-me .bio {
+  width: 100%;
+  padding: 3%;
+}
+@media (min-width: 800px) {
+  .wrapper #about-me .bio {
+    width: 50%;
+  }
+}
+.wrapper #about-me .skills {
+  width: 100%;
+  padding: 3%;
+}
+@media (min-width: 800px) {
+  .wrapper #about-me .skills {
+    width: 50%;
+  }
+}
+.wrapper #about-me .skills ul {
+  font-size: 1.6rem;
+  list-style: none;
+}
+.wrapper #about-me .skills ul li {
+  border: 1px dotted #dfdfdf;
+  padding: 3%;
+}
+.wrapper .work-history {
+  width: 100%;
+  padding: 2%;
+}
+.wrapper .work-history h2 {
+  margin-bottom: 2%;
+}
+.wrapper .work-history table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid #dfdfdf;
+}
+.wrapper .work-history table th {
+  padding: 2%;
+}
+.wrapper .work-history table tr {
+  padding: 2%;
+}
+.wrapper .work-history table tr:nth-child(even) {
+  background: #dfdfdf;
+}
+.wrapper .work-history table td {
+  padding: 2%;
+}
+.wrapper footer {
+  width: 100%;
+  background: #404040;
+  color: #fff;
+  text-align: center;
+  margin-top: 4%;
+  padding: 2% 0 5%;
+}

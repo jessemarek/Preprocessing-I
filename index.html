@@ -1,10 +1,12 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume - Jesse Marek</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -14,6 +16,93 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about-me">About</a>
+        <a href="https://jessemarek.github.io/portfolio-website/portfolio/index.html" target="_blank">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="container">
+        <img src="images/bio-pic.jpg" alt="Black and White photo of me" />
+
+        <div class="name-block">
+          <h1>Jesse Marek - Web Dev</h1>
+          <h3>Technology is my jam!</h3>
+
+
+          <hr>
+
+          <p>Occasionally I have time to work on side projects. If you are interested, let me know by signing up on this
+            website.</p>
+          <button type="button">Lets Team Up</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="about-me">
+      <div class="bio">
+        <h2>Listen Up...</h2>
+        <p>I am a Full Stack Web Dev currently in school at Lambda School. I have a passion for Web development and creating great web based content. I enjoy all aspects of web development form Front-end to Back-end.</p>
+        <br>
+        <hr id="contact">
+        <br>
+        <h4>Contact Info</h4>
+        <p>jesse.a.marek@gmail.com | (951) 490-5484</p>
+      </div>
+
+      <div class="skills">
+        <h2>Stuff I'm Good At:</h2>
+        <ul>
+          <li>Warhammer 40,000</li>
+          <li>Coding up UI</li>
+          <li>Playing lots of video games</li>
+          <li>Solving problems</li>
+          <li>Taking long naps</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class=work-history>
+      <h2>Work History</h2>
+      <table>
+        <tr>
+          <th>Yrs</th>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Tech Used</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Apple</td>
+          <td>Software Engineer</td>
+          <td>Swift</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Microsoft</td>
+          <td>Computer Scientist</td>
+          <td>.NET</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Amazon</td>
+          <td>Dev Ops</td>
+          <td>.AWS</td>
+        </tr>
+
+      </table>
+    </section>
+
+    <footer>
+      <p>Copyright Awesomeness 2020</p>
+    </footer>
+  </div>
 </body>
+
 </html>
